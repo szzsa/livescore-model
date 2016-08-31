@@ -2,9 +2,6 @@ package ro.szzsa.livescore.model;
 
 import java.util.List;
 
-import ro.szzsa.livescore.model.event.Goal;
-import ro.szzsa.livescore.model.event.Penalty;
-
 public class GameDetails {
 
   private Game game;
