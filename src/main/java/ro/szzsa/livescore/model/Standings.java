@@ -14,7 +14,7 @@ public class Standings {
 
   private int seriesLimit;
 
-  private boolean isActive;
+  private boolean active;
 
   private String places;
 
@@ -59,11 +59,11 @@ public class Standings {
   }
 
   public boolean isActive() {
-    return isActive;
+    return active;
   }
 
   public void setActive(boolean isActive) {
-    this.isActive = isActive;
+    this.active = isActive;
   }
 
   public String getPlaces() {

@@ -6,11 +6,11 @@ public class Penalty {
 
   private List<PenaltyType> types;
 
-  private Game game;
+  private String gameId;
 
   private String player;
 
-  private Team team;
+  private String teamCode;
 
   private String time;
 
@@ -22,12 +22,12 @@ public class Penalty {
     this.types = types;
   }
 
-  public Game getGame() {
-    return game;
+  public String getGameId() {
+    return gameId;
   }
 
-  public void setGame(Game game) {
-    this.game = game;
+  public void setGameId(String gameId) {
+    this.gameId = gameId;
   }
 
   public String getPlayer() {
@@ -38,12 +38,12 @@ public class Penalty {
     this.player = player;
   }
 
-  public Team getTeam() {
-    return team;
+  public String getTeamCode() {
+    return teamCode;
   }
 
-  public void setTeam(Team team) {
-    this.team = team;
+  public void setTeamCode(String teamCode) {
+    this.teamCode = teamCode;
   }
 
   public String getTime() {

@@ -1,12 +1,14 @@
 package ro.szzsa.livescore.model;
 
+import java.util.List;
+
 public class Game {
 
   private String id;
 
-  private String homeTeam;
+  private String homeTeamCode;
 
-  private String visitorTeam;
+  private String visitorTeamCode;
 
   private long date;
 
@@ -18,6 +20,10 @@ public class Game {
 
   private String time;
 
+  private List<Goal> goals;
+
+  private List<Penalty> penalties;
+
   public String getId() {
     return id;
   }
@@ -26,20 +32,20 @@ public class Game {
     this.id = id;
   }
 
-  public String getHomeTeam() {
-    return homeTeam;
+  public String getHomeTeamCode() {
+    return homeTeamCode;
   }
 
-  public void setHomeTeam(String homeTeam) {
-    this.homeTeam = homeTeam;
+  public void setHomeTeamCode(String homeTeamCode) {
+    this.homeTeamCode = homeTeamCode;
   }
 
-  public String getVisitorTeam() {
-    return visitorTeam;
+  public String getVisitorTeamCode() {
+    return visitorTeamCode;
   }
 
-  public void setVisitorTeam(String visitorTeam) {
-    this.visitorTeam = visitorTeam;
+  public void setVisitorTeamCode(String visitorTeamCode) {
+    this.visitorTeamCode = visitorTeamCode;
   }
 
   public long getDate() {
@@ -80,5 +86,21 @@ public class Game {
 
   public void setTime(String time) {
     this.time = time;
+  }
+
+  public List<Goal> getGoals() {
+    return goals;
+  }
+
+  public void setGoals(List<Goal> goals) {
+    this.goals = goals;
+  }
+
+  public List<Penalty> getPenalties() {
+    return penalties;
+  }
+
+  public void setPenalties(List<Penalty> penalties) {
+    this.penalties = penalties;
   }
 }

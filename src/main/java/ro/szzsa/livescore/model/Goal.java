@@ -4,9 +4,9 @@ import java.util.List;
 
 public class Goal {
 
-  private Game game;
+  private String gameId;
 
-  private String team;
+  private String teamCode;
 
   private String author;
 
@@ -14,20 +14,20 @@ public class Goal {
 
   private String time;
 
-  public Game getGame() {
-    return game;
+  public String getGameId() {
+    return gameId;
   }
 
-  public void setGame(Game game) {
-    this.game = game;
+  public void setGameId(String gameId) {
+    this.gameId = gameId;
   }
 
-  public String getTeam() {
-    return team;
+  public String getTeamCode() {
+    return teamCode;
   }
 
-  public void setTeam(String team) {
-    this.team = team;
+  public void setTeamCode(String teamCode) {
+    this.teamCode = teamCode;
   }
 
   public String getAuthor() {
