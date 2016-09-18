@@ -10,11 +10,11 @@ public class Standings {
 
   private List<TeamStats> stats;
 
-  private boolean isGroup;
+  private boolean isPlayoff;
 
   private int seriesLimit;
 
-  private boolean active;
+  private boolean isActive;
 
   private String places;
 
@@ -42,12 +42,12 @@ public class Standings {
     this.stats = stats;
   }
 
-  public boolean isGroup() {
-    return isGroup;
+  public boolean isPlayoff() {
+    return isPlayoff;
   }
 
-  public void setGroup(boolean isGroup) {
-    this.isGroup = isGroup;
+  public void setPlayoff(boolean isGroup) {
+    this.isPlayoff = isGroup;
   }
 
   public int getSeriesLimit() {
@@ -59,11 +59,11 @@ public class Standings {
   }
 
   public boolean isActive() {
-    return active;
+    return isActive;
   }
 
   public void setActive(boolean isActive) {
-    this.active = isActive;
+    this.isActive = isActive;
   }
 
   public String getPlaces() {
