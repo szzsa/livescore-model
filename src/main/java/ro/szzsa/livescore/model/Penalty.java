@@ -1,10 +1,8 @@
 package ro.szzsa.livescore.model;
 
-import java.util.List;
-
 public class Penalty {
 
-  private List<PenaltyType> types;
+  private PenaltyType type;
 
   private String gameId;
 
@@ -14,12 +12,12 @@ public class Penalty {
 
   private String time;
 
-  public List<PenaltyType> getTypes() {
-    return types;
+  public PenaltyType getType() {
+    return type;
   }
 
-  public void setTypes(List<PenaltyType> types) {
-    this.types = types;
+  public void setType(PenaltyType type) {
+    this.type = type;
   }
 
   public String getGameId() {
