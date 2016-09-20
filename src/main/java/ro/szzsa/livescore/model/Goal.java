@@ -4,6 +4,8 @@ import java.util.List;
 
 public class Goal {
 
+  private GoalType type;
+
   private String gameId;
 
   private String teamCode;
@@ -13,6 +15,14 @@ public class Goal {
   private List<String> assists;
 
   private String time;
+
+  public GoalType getType() {
+    return type;
+  }
+
+  public void setType(GoalType type) {
+    this.type = type;
+  }
 
   public String getGameId() {
     return gameId;
