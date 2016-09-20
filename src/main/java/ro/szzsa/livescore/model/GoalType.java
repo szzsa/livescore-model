@@ -28,5 +28,15 @@ public enum GoalType {
   /**
    * Goal scored by a team that has two fewer skaters on ice than its opponent.
    */
-  SH2
+  SH2,
+
+  /**
+   * Goal scored during a penalty shot.
+   */
+  PS,
+
+  /**
+   * Goal scored during the game winner shootout.
+   */
+  GWS
 }
