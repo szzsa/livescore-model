@@ -1,5 +1,7 @@
 package ro.szzsa.livescore.model;
 
+import java.util.List;
+
 /**
  *
  */
@@ -16,6 +18,8 @@ public class LeaguePhase extends Model {
   private String places;
 
   private int numberOfTeams;
+
+  private List<Standings> standingsList;
 
   public String getTitle() {
     return title;
@@ -63,5 +67,13 @@ public class LeaguePhase extends Model {
 
   public void setNumberOfTeams(int numberOfTeams) {
     this.numberOfTeams = numberOfTeams;
+  }
+
+  public List<Standings> getStandingsList() {
+    return standingsList;
+  }
+
+  public void setStandingsList(List<Standings> standingsList) {
+    this.standingsList = standingsList;
   }
 }

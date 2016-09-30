@@ -2,9 +2,9 @@ package ro.szzsa.livescore.model;
 
 public class TeamStats extends Model {
 
-  private long teamCode;
+  private long teamId;
 
-  private String standingsId;
+  private long standingsId;
 
   private int points;
 
@@ -24,19 +24,19 @@ public class TeamStats extends Model {
 
   private int place;
 
-  public long getTeamCode() {
-    return teamCode;
+  public long getTeamId() {
+    return teamId;
   }
 
-  public void setTeamCode(long teamCode) {
-    this.teamCode = teamCode;
+  public void setTeamId(long teamId) {
+    this.teamId = teamId;
   }
 
-  public String getStandingsId() {
+  public long getStandingsId() {
     return standingsId;
   }
 
-  public void setStandingsId(String standingsId) {
+  public void setStandingsId(long standingsId) {
     this.standingsId = standingsId;
   }
 
