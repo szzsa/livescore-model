@@ -6,6 +6,8 @@ public class Penalty extends Model {
 
   private long teamId;
 
+  private int order;
+
   private PenaltyType type;
 
   private String player;
@@ -26,6 +28,14 @@ public class Penalty extends Model {
 
   public void setTeamId(long teamId) {
     this.teamId = teamId;
+  }
+
+  public int getOrder() {
+    return order;
+  }
+
+  public void setOrder(int order) {
+    this.order = order;
   }
 
   public PenaltyType getType() {

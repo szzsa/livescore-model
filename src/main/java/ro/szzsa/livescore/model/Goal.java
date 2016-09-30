@@ -8,6 +8,8 @@ public class Goal extends Model {
 
   private long teamId;
 
+  private int order;
+
   private GoalType type;
 
   private String author;
@@ -30,6 +32,14 @@ public class Goal extends Model {
 
   public void setTeamId(long teamId) {
     this.teamId = teamId;
+  }
+
+  public int getOrder() {
+    return order;
+  }
+
+  public void setOrder(int order) {
+    this.order = order;
   }
 
   public GoalType getType() {
