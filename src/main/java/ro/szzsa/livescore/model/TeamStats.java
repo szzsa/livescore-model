@@ -1,8 +1,8 @@
 package ro.szzsa.livescore.model;
 
-public class TeamStats {
+public class TeamStats extends Model {
 
-  private String teamCode;
+  private long teamCode;
 
   private String standingsId;
 
@@ -24,11 +24,11 @@ public class TeamStats {
 
   private int place;
 
-  public String getTeamCode() {
+  public long getTeamCode() {
     return teamCode;
   }
 
-  public void setTeamCode(String teamCode) {
+  public void setTeamCode(long teamCode) {
     this.teamCode = teamCode;
   }
 

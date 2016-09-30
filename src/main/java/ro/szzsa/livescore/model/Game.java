@@ -2,13 +2,13 @@ package ro.szzsa.livescore.model;
 
 import java.util.List;
 
-public class Game {
+public class Game extends Model {
 
-  private String id;
+  private String code;
 
-  private String homeTeamCode;
+  private long homeTeamId;
 
-  private String visitorTeamCode;
+  private long visitorTeamId;
 
   private long date;
 
@@ -24,28 +24,28 @@ public class Game {
 
   private List<Penalty> penalties;
 
-  public String getId() {
-    return id;
+  public String getCode() {
+    return code;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setCode(String code) {
+    this.code = code;
   }
 
-  public String getHomeTeamCode() {
-    return homeTeamCode;
+  public long getHomeTeamId() {
+    return homeTeamId;
   }
 
-  public void setHomeTeamCode(String homeTeamCode) {
-    this.homeTeamCode = homeTeamCode;
+  public void setHomeTeamId(long homeTeamId) {
+    this.homeTeamId = homeTeamId;
   }
 
-  public String getVisitorTeamCode() {
-    return visitorTeamCode;
+  public long getVisitorTeamId() {
+    return visitorTeamId;
   }
 
-  public void setVisitorTeamCode(String visitorTeamCode) {
-    this.visitorTeamCode = visitorTeamCode;
+  public void setVisitorTeamId(long visitorTeamId) {
+    this.visitorTeamId = visitorTeamId;
   }
 
   public long getDate() {

@@ -1,6 +1,6 @@
 package ro.szzsa.livescore.model;
 
-public class Team {
+public class Team extends Model {
 
   private String code;
 
