@@ -2,45 +2,13 @@ package ro.szzsa.livescore.model;
 
 import java.util.List;
 
-public class Goal extends Model {
-
-  private long gameId;
-
-  private long teamId;
-
-  private int order;
+public class Goal extends Event {
 
   private GoalType type;
 
   private String author;
 
   private List<String> assists;
-
-  private String time;
-
-  public long getGameId() {
-    return gameId;
-  }
-
-  public void setGameId(long gameId) {
-    this.gameId = gameId;
-  }
-
-  public long getTeamId() {
-    return teamId;
-  }
-
-  public void setTeamId(long teamId) {
-    this.teamId = teamId;
-  }
-
-  public int getOrder() {
-    return order;
-  }
-
-  public void setOrder(int order) {
-    this.order = order;
-  }
 
   public GoalType getType() {
     return type;
@@ -64,13 +32,5 @@ public class Goal extends Model {
 
   public void setAssists(List<String> assists) {
     this.assists = assists;
-  }
-
-  public String getTime() {
-    return time;
-  }
-
-  public void setTime(String time) {
-    this.time = time;
   }
 }
