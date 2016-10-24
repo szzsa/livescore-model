@@ -10,6 +10,8 @@ public class Goal extends Event {
 
   private List<String> assists;
 
+  private boolean isEmptyNet;
+
   public GoalType getType() {
     return type;
   }
@@ -32,5 +34,13 @@ public class Goal extends Event {
 
   public void setAssists(List<String> assists) {
     this.assists = assists;
+  }
+
+  public boolean isEmptyNet() {
+    return isEmptyNet;
+  }
+
+  public void setEmptyNet(boolean emptyNet) {
+    isEmptyNet = emptyNet;
   }
 }
